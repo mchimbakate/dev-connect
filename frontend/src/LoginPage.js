@@ -9,7 +9,7 @@ const LoginPage = ({ setAuthToken }) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:8080/auth/login', {
+            const response = await axios.post('https://dev-connect-backend-production.up.railway.app/auth/login', {
                 email,
                 password
             });
